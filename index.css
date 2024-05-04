@@ -1,5 +1,5 @@
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: 'Rockwell', Slab-serif;
     line-height: 1.6;
     margin: 0;
     padding: 0;
@@ -32,31 +32,29 @@ section {
     padding: 20px;
 }
 
-
-
 footer {
     background-color: #603c25;
     color: #fff;
     text-align: center;
     padding: 10px;
-    display: flex; 
-    justify-content: space-around; 
-    align-items: center; 
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 
 .contact-info {
-    display: flex; 
-    align-items: center; 
+    display: flex;
+    align-items: center;
 }
 
 .contact-info p {
-    margin-left: 5px; }
+    margin-left: 5px;
+}
 
-
-
-
-h1, h2 {
+h1,
+h2 {
     color: #603c25;
+    text-align: center
 }
 
 nav ul li a:hover {
@@ -66,7 +64,7 @@ nav ul li a:hover {
 img {
     display: block;
     margin: 0 auto;
-    border-radius: 35px; 
+    border-radius: 35px;
 }
 
 
@@ -76,32 +74,32 @@ section {
     margin-bottom: 20px;
     border-radius: var(--section-border-radius);
     transition: box-shadow 0.3s ease;
-    border: 1px solid #ccc; 
-    box-shadow: 0 0 5px rgba
+    border: 1px solid #ccc;
+    box-shadow: 0 0 5px rgba;
 }
 
 section h2 {
-    margin-bottom: 10px; 
+    margin-bottom: 10px;
 }
 
 section p {
-    color: #666; 
+    color: #666;
 }
 
 section ul {
-    list-style-type: disc; 
-    margin-left: 20px; 
+    list-style-type: disc;
+    margin-left: 20px;
 }
 
 section ul li {
-    margin-bottom: 5px; 
-    }
-
+    margin-bottom: 5px;
+}
 
 section:hover {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    transform: translateY(-2px); 
+    transform: translateY(-2px);
 }
+
 
 @media screen and (max-width: 768px) {
     header {
@@ -120,5 +118,45 @@ section:hover {
     .contact-info p {
         margin-left: 0;
         margin-top: 5px;
+    }
+
+  
+    section {
+        margin-right: 0;
+    }
+}
+
+
+#services,
+#commercial {
+    display: inline-block; 
+    width: calc(50% - 20px); 
+    
+    box-sizing: border-box; 
+}
+
+
+#services {
+    margin-left: 20px; 
+    padding: 30px; 
+    /*background-color: #e6e6e6; */
+    border-radius: 10px; 
+    box-sizing: border-box; 
+    border: 1px solid #aa9e97;
+}
+
+
+@media screen and (max-width: 768px) {
+    #services {
+        display: block;
+        width: auto;
+        margin: 0 auto; 
+        margin-bottom: 20px; 
+    }
+        
+    #commercial {
+        display: block;
+        width: auto;
+        margin-right: 0;
     }
 }
